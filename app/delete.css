@@ -1,0 +1,68 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  body {
+    background-color: #cd202d;
+  }
+  .container-delete {
+    background-color: #1b1b1b;
+    width: min(90%, 500px);
+    margin: auto;
+    margin-top: 10em; /* Ajuste conforme necessário */
+    padding: 4em 2em;
+    border-radius: 0.5em;
+  }
+  .header-delete {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    border-bottom: 1px dashed #3e3f43;
+  }
+  .header-delete h1 {
+    color: #ffffff;
+    font-size: 2em;
+  }
+  .delete-message {
+    color: #ffffff;
+    margin: 2em 0;
+  }
+  .delete-message strong {
+    color: #cb202d;
+  }
+  .delete-actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+  }
+  .btn-cancel {
+    text-align: center;
+    background-color: #3e3f43;
+    color: #a9a7a7;
+    border-radius: 0.5em;
+    padding: 1em 2em;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  .btn-cancel:hover {
+    background-color: #2c2d30;
+  }
+  .btn-delete {
+    text-align: center;
+    background-color: #cb202d;
+    color: #ffffff;
+    border-radius: 0.5em;
+    padding: 1em 3em;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.2s;
+  }
+  .btn-delete:hover {
+    background-color: #a91923;
+  }
+  
