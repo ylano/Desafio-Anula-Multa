@@ -1,3 +1,4 @@
+import Navbar from './components/navbar';
 import React, { useState, useEffect } from 'react';
 import '../app/globals.css';
 import Head from "next/head";
@@ -5,9 +6,8 @@ import Link from "next/link";
 
 const Home = () => {
   const [tasks, setTasks] = useState([]);
-  const [timerValue, setTimerValue] = useState(''); // Deixar vazio inicialmente
+  const [timerValue, setTimerValue] = useState('');
 
-  // Atualiza o temporizador a cada segundo, mas apenas no cliente
   useEffect(() => {
     if (typeof window !== 'undefined') {
       const intervalId = setInterval(() => {
@@ -36,7 +36,6 @@ const Home = () => {
     fetchTasks();
   }, []);
 
-  // Lógica do temporizador movida para cá
   useEffect(() => {
     const focusButton = document.getElementById("focus");
     const buttons = document.querySelectorAll(".btn");
@@ -145,7 +144,6 @@ const Home = () => {
       }
     });
 
-    // Limpar os event listeners ao desmontar o componente
     return () => {
       reset.removeEventListener("click", resetTime);
       focusButton.removeEventListener("click", () => {});
@@ -158,6 +156,9 @@ const Home = () => {
 
   return (
     <>
+    <div>
+      <Navbar />
+    </div>
       <div className="container">
         <div className="section-container">
           <button id="focus" className="btn btn-timer btn-focus">Focus</button>
