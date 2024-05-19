@@ -147,11 +147,11 @@ button {
   left: 50%;
   padding: 4em 2em;
   border-radius: 0.5em;
-  margin-top: 20em;
+  margin-top: 15em;
   display: flex;
   flex-direction: column;
   overflow-y: auto;
-  max-height: 50vh; /* Define a altura máxima */
+  max-height: 30vh; /* Define a altura máxima */
 }
 
 .edit-button,
