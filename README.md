@@ -37,3 +37,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ## Deploy
 https://desafio-anula-multa.vercel.app
+https://desafio-anula-multa-update.vercel.app
